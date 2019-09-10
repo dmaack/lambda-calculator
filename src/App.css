@@ -20,3 +20,73 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+
+  .App{
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+  }
+
+  .specials_container{
+      /* width:60%; */
+    display:flex;
+    justify-content: space-evenly;
+    
+   
+  }
+
+  .special_button{
+    border-radius: 50%;
+    background-color: #2160b0;
+    color: white;
+    border: none;
+    margin: 2% 4;
+    padding: 20%;
+    font-size: 1.5rem;
+    width:50px;
+    height:50px;
+    box-shadow: 0 2px 2px 0 black;
+    /* width:5%; */
+  }
+
+  .numbers_container{
+      /* width: 30%; */
+      display: flex;
+      justify-content: space-between;
+      flex-wrap:wrap ;
+
+  }
+
+  .numbers_button{
+      border-radius: 50%;
+      background-color: #123c78;
+      color: white;
+      border: none;
+      margin: 2% 0;
+      padding: 20%;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 2px 0 black;
+      /* display:flex;
+      flex-direction: wrap;
+      width:100px; */
+  }
+
+.operators_container{
+    /* width:10%; */
+display:flex;
+flex-direction: column;
+}
+
+  .operator_button{
+    border-radius: 50%;
+    background-color: #3eb5e5;
+    color: white;
+    border: none;
+    margin: 2% 0;
+    padding: 20%;
+    font-size: 1.5rem;
+    width:60px;
+    height:60px;
+    box-shadow: 0 2px 2px 0 black;
+  }
+
