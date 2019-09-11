@@ -2,6 +2,7 @@
     background-color: #c00025;
     width: 100%;
     max-width: 550px;
+    height:600px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
@@ -20,49 +21,206 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+.App{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-  .App{
-      display: flex;
-      flex-wrap: wrap;
-      width: 90%;
-  }
-
-  .allButtons_container{
-    display:flex;
-    align-items: center;
+.calculator_keypad{
+    width:450px;
+    display: flex;
+    align-items: flex-start; 
     justify-content: center;
-  }
+}
 
-.special_number_container {
+.special_numbers_container{
+    height:10px;
+    margin-right:50px;
+   display: flex;
+   flex-direction: column;
+}
+.specials_container{
+    width:200px;
+    height:70px;
+    display:flex;
+}
+
+.special_button{
+    border-radius: 50%;
+    background-color: #2160b0;
+    color: white;
+    border: none;
+    margin: 6%;
+    padding: 16%;
+    font-size: 1.5rem;
+    width:30px;
+    height:30px;
+    box-shadow: 0 2px 2px 0 black;
+    
+}
+
+.numbers_container{
+    width: 300px;
+    
+    display: flex;
+    flex-wrap:wrap ;
+}
+
+.numbers_button{
+    border-radius: 50%;
+    background-color: #123c78;
+    color: white;
+    border: none;
+    margin: 4%;
+    padding: 11%;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 2px 0 black;
+    width:40px;
+    height:40px;
+}
+
+.operators_container{
+    height:350px;
     display:flex;
     flex-direction: column;
+    align-items: flex-end;
 }
-  /* .specials_container{
-    display:flex;
-    justify-content: space-evenly;
+
+.operator_button{
+    border-radius: 50%;
+    background-color: #3eb5e5;
+    color: white;
+    border: none;
+    margin: 0 0 4% 15%;
+    padding: 6%;
+    font-size: 1.5rem;
+    width:60px;
+    height:60px;
+    box-shadow: 0 2px 2px 0 black;
+
+}
+
+
+
+
+
+
+
+
+
+  /*
+  .App{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;*/
+    /* display: flex;
+    flex-flow: wrap row; 
+  } 
+
+  .calculator_keypad{
+      height: 400px;
+      display: flex;
+  }
+
+  .special_numbers_container{
+      width:240px;
+  }
+
+  .specials_container{
+      display:flex;
+  }
+  .special_button{
+    border-radius: 50%;
+    background-color: #2160b0;
+    color: white;
+    border: none;
+    margin: 6%;
+    padding: 20%;
+    font-size: 1.5rem;
+    width:50px;
+    height:50px;
+    box-shadow: 0 2px 2px 0 black;
     
-   
-  } */
+  }
+
+  .numbers_container{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .numbers_button{
+    border-radius: 50%;
+    background-color: #123c78;
+    color: white;
+    border: none;
+    margin: 0 10px;
+    padding: 20%;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 2px 0 black;
+    width: 50px;
+    height: 50px;
+    /* display:flex;
+    flex-direction: wrap; 
+    width:100px;  
+}
+.operators_container{
+    width:200px;
+     margin-top:4%;
+     display:flex;
+     flex-direction: column;
+     align-items: flex-end;
+ }
+ 
+   .operator_button{
+     border-radius: 50%;
+     background-color: #3eb5e5;
+     color: white;
+     border: none;
+     /* margin: 2% 0; */
+     /* padding: 20%;
+     font-size: 1.5rem;
+     width:60px;
+     height:60px;
+     box-shadow: 0 2px 2px 0 black;
+   }
+*/
+
+
+
+/* .special_numbers_container {
+    width:200px;
+    margin: 0;
+    display:flex;
+    flex-wrap: wrap;
+} */
+  /* .specials_container{
+    display: flex;
+    
+  }
 
   .special_button{
     border-radius: 50%;
     background-color: #2160b0;
     color: white;
     border: none;
-    margin: 2% 4;
+    margin: 6%;
     padding: 20%;
     font-size: 1.5rem;
     width:50px;
     height:50px;
     box-shadow: 0 2px 2px 0 black;
-    /* width:5%; */
+    
   }
 
   .numbers_container{
-      /* width: 30%; */
+      width:200px;
       display: flex;
-      /* justify-content: space-between; */
-      flex-wrap:wrap ;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
 
   }
 
@@ -71,19 +229,23 @@
       background-color: #123c78;
       color: white;
       border: none;
-      margin: 2% 0;
+      margin: 0 10px;
       padding: 20%;
       font-size: 1.5rem;
       box-shadow: 0 2px 2px 0 black;
+      width: 50px;
+      height: 50px;
       /* display:flex;
-      flex-direction: wrap;
-      width:100px; */
-  }
+      flex-direction: wrap; 
+      width:100px;  
+  }*/
 
-.operators_container{
-    /* width:10%; */
-display:flex;
-flex-direction: column;
+/* .operators_container{
+   width:200px;
+    margin-top:4%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
   .operator_button{
@@ -91,11 +253,11 @@ flex-direction: column;
     background-color: #3eb5e5;
     color: white;
     border: none;
-    margin: 2% 0;
-    padding: 20%;
+    /* margin: 2% 0; */
+    /* padding: 20%;
     font-size: 1.5rem;
     width:60px;
     height:60px;
     box-shadow: 0 2px 2px 0 black;
-  }
+  }  */ 
 

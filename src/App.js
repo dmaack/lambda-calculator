@@ -29,19 +29,19 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */
-         
-        }
-        
-        <Display />
-        <div className='allButtons_container'>
-          <div className='special_number_container'>
-        <Specials />
-        <Numbers />
+        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+          <Display />
+        <div className='caclulator_keypad'>
+          <div className='special_numbers_container'>
+          
+            <Specials />
+            
+            <Numbers />
+            
+          </div>
+          <Operators />
         </div>
        
-        <Operators />
-        </div>
       </div> 
     </div> //container
   );
