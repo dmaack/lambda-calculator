@@ -32,13 +32,18 @@ function App() {
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */
          
         }
+        
         <Display />
+        <div className='allButtons_container'>
+          <div className='special_number_container'>
         <Specials />
-       <Numbers />
-       <Operators />
+        <Numbers />
+        </div>
        
-      </div>
-    </div>
+        <Operators />
+        </div>
+      </div> 
+    </div> //container
   );
 }
 
